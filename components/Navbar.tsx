@@ -1,3 +1,4 @@
+import Image from "next/image";
 //import Link from "next/link";
 
 export default function Navbar(){
@@ -6,13 +7,27 @@ export default function Navbar(){
             <nav className="flex justify-between px-6 py-4">
                 <div className="relative">
                     {/*Desktop logo */}
-                    <img src="/printforge_logo.svg" alt="printforge logo" className="w-[200px] h-auto hidden md:block"/>
+                    <Image
+                        src="/printforge_logo.svg"
+                        alt="printforge logo"
+                        width={200}
+                        height={40}
+                        className="hidden md:block w-[200px] h-auto"
+                        priority
+                    />
                     {/*Mobile Logo */}
-                    <img src="/printforge_logo.svg" alt="printforge logo" className="w-[40px] h-auto block md:hidden"/>
+                    <Image
+                        src="/printforge_logo.svg"
+                        alt="printforge logo"
+                        width={40}
+                        height={40}
+                        className="block md:hidden w-[40px] h-auto"
+                        priority
+                    />
                 </div>
                 <ul className="flex items-center gap-4">
                     <a href="">3D Model</a>
-                    <a href="">About</a>
+                    <a href="/about">About</a>
                 </ul>
             </nav>
 
