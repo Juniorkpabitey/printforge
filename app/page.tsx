@@ -1,5 +1,6 @@
 //import Image from "next/image";
 //import styles from "./page.module.css";
+import HeroImg from '@/public/hero_img.png'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         </div>
       </div>
       {/* Desktop*/}
-      <img src="/hero_img.png" alt="hero_image" className="width={350}"/>
+      <img src={HeroImg.src} alt="hero_image" className="width={350}"/>
       {/* Mobile*/}
     </section>
     </main>
