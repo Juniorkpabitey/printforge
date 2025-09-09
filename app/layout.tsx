@@ -26,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Navbar/>
-      <body className={` ${albertSan.className} ${montserratAlternates.className}`}>{children}</body>
+      <body className={` ${albertSan.className} ${montserratAlternates.className}`}>{children}
+      <footer> &copy; {new Date().getFullYear()} PrintForge 3D Limited</footer>
+
+      </body>
     </html>
   )
 }
