@@ -29,7 +29,7 @@ export default function Navbar(){
                 </div>
                 </Link>
                 <ul className="flex items-center gap-4">
-                    <Link href="/3d-models">3D Model</Link>
+                    <Link href="/3d-model">3D Model</Link>
                     <Link href="/about">About</Link>
                 </ul>
             </nav>
