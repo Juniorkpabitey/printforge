@@ -12,7 +12,7 @@ export default function Home() {
              <button className="px-6 py-3 text-black transition duration-100 bg-white border-2 border-black hover:bg-black hover:text-white">BROWSE MODELS</button>
         </div>
       </div>
-      {/* Desktop*/}
+      {/* Desktop*/ }
       <img src={HeroImg.src} alt="hero_image" className="width={350}"/>
       {/* Mobile*/}
     </section>
